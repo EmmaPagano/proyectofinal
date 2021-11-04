@@ -1,0 +1,194 @@
+$color-principal: #0072bb;
+$color-texto: #333333;
+$color-gris: #cccccc;
+$color-constraste: #555555;
+$color-verde: #69c2bb;
+
+* {
+  font-family: "Encode Sans", sans-serif;
+  text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: $color-texto;
+}
+p {
+  color: $color-texto;
+}
+.btn-cta {
+  margin: auto;
+  margin-top: 2.5rem;
+  display: block;
+  padding: 1rem 0.7rem;
+  background: $color-principal;
+  width: 180px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+}
+.color-enfasis {
+  color: $color-principal;
+}
+.notificacion{
+  text-align: center;
+  padding: 1rem 0;
+  background: rgba(4, 160, 4, 0.685);
+  color: #fff;
+  font-weight: bold;
+}
+.notificacion-error{
+  text-align: center;
+  padding: 1rem 0;
+  background: rgba(255, 0, 0, 0.548);
+  color: #fff;
+  font-weight: bold;
+}
+/*
+    SECCION HEADER
+*/
+.main-header {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+      rgba(47, 23, 15, 0.65),
+      rgba(47, 23, 15, 0.65)
+    ),
+    url(../img/fondo-header.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 60vh;
+  .header-title {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    order: 1;
+  }
+  .navbar {
+    order: 0;
+  }
+}
+
+/*
+    SECCION PRESENTATION
+*/
+.presentation {
+  background: #f2f2f2;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  .presentation-content {
+    margin-bottom: 2rem;
+    p.color-enfasis {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+  }
+  .presentation-img {
+    img {
+      border-radius: 5px;
+    }
+  }
+}
+
+/*
+  SECCION VIDEO
+*/
+.video {
+  background: #0072bbab;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.container-video:before {
+  border-radius: 0.5rem;
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  border: 0.25rem solid rgba(255, 255, 255, 0.85);
+  z-index: -1;
+}
+/* 
+  SECCION STATS
+*/
+.stats {
+  background: #f2f2f2;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  .col-12 {
+    margin-bottom: 1rem;
+  }
+  .stats-container {
+    padding: 1rem 0;
+    background: #fff;
+    text-align: center;
+    border-radius: 5px;
+    h2 {
+      font-size: 3em;
+      font-weight: 700;
+      color: #0072bb;
+      margin: 0.2em 0;
+    }
+    p:last-child {
+      color: #333;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    i {
+      font-size: 42px;
+      color: $color-verde;
+    }
+  }
+}
+
+/*FOOTER*/
+.footer {
+  padding-top: 2rem;
+  background: $color-constraste;
+  text-align: center;
+}
+
+/* 
+    PAGINA FAQ
+
+*/
+
+.faq-section{
+  background: #f2f2f2;
+  .row{
+    align-items: center;
+    background: #0072bb47;
+    padding: 1rem 0;
+  }
+  .accordion-button{
+    font-weight: bold;
+  }
+}
+
+
+/*PÁGINA REGISTRO*/
+.registro-contenedor{
+  
+}
+
+@media (min-width: 768px) {
+  .video {
+    iframe {
+      height: 400px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .main-header {
+    .navbar {
+      background: #0072bb96;
+    }
+  }
+}

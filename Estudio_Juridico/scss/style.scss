@@ -1,0 +1,384 @@
+$enfasis: #db3636;
+$titulares: #333333;
+$texto: #555555;
+$footer: #141414;
+
+/* 
+    ESTILOS GENERALES
+*/
+.fondo-menu {
+  background: #fff;
+}
+a {
+  text-decoration: none;
+}
+.color-parrafos {
+  color: $texto;
+}
+.color-titulares {
+  color: $titulares;
+}
+.color-enfasis {
+  color: $enfasis;
+}
+.fondo-footer {
+  background: $footer;
+}
+.section-title {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+.separador {
+  width: 70%;
+  color: #db3636;
+  background: #db3636;
+  height: 2px;
+  opacity: 1;
+  margin: 1rem auto;
+}
+/* 
+    ESTILOS HEADER
+*/
+.encabezado {
+  transition: all 0.7s ease;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  color: #fff;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+
+    .logo {
+      max-width: 150px;
+      padding: 0.5rem;
+    }
+    .navbar-toggler {
+      color: $enfasis;
+    }
+    .navbar-toggler:focus {
+      box-shadow: none !important;
+    }
+    .navbar {
+      text-align: center;
+      width: 100%;
+      .container-fluid {
+        background: #222;
+        .nav-link {
+          color: #fff;
+          font-weight: bold;
+          font-size: 14px;
+          &:hover {
+            transition: all 0.5s ease;
+            color: #fff !important;
+            border-radius: 5px;
+            background: $enfasis;
+          }
+        }
+        .active {
+          color: $enfasis !important;
+        }
+      }
+    }
+  }
+}
+
+
+/*
+  welcome message
+*/
+.welcome-message {
+  align-items: center;
+  display: flex;
+  background: url(../img/banner.jpg) no-repeat center center #423c3cb5;
+  background-size: cover;
+  height: 70vh;
+  .btn-calculadora {
+    margin-top: unset;
+    padding: 0.5rem 0.8rem;
+    color: #fff;
+    font-weight: 600;
+    background: #db3636;
+    border-radius: 4px;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    width: 200px;
+    &:hover{
+      transition: all .5s ease;
+      opacity: 0.6;
+    }
+  }
+}
+
+/* 
+  SECCION PRESENTATION
+*/
+.presentation {
+  .presentation-icons {
+    i {
+      padding: 1rem;
+      font-size: 25px;
+      color: $enfasis;
+      border-radius: 5px;
+      margin: 1rem 0;
+      border: 1px solid #ddd;
+      width: 60px;
+      text-align: center;
+    }
+    .presentation-subtitle {
+      font-size: 18px;
+      font-weight: 700;
+      color: #444;
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+/* 
+  SECCION STATS
+*/
+.stats {
+  .container {
+    .row {
+      padding: 0.8rem;
+      .stats-container {
+        text-align: center;
+        padding: 1.5rem 1rem;
+        background: $enfasis;
+        color: #fff;
+        margin: 2rem 0;
+        i {
+          font-size: 60px;
+          margin-bottom: 1rem;
+        }
+        h5 {
+          font-size: 48px;
+          font-weight: bold;
+        }
+        p {
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+/* 
+  SECCION PRACTICE AREAS
+*/
+.practice-area {
+  .section-description {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .container-area {
+    margin-top: 2rem;
+    img {
+      margin-bottom: 1rem;
+    }
+    h5 {
+      color: $enfasis;
+    }
+  }
+}
+
+/*SECCIÓN NUESTRO EQUIPO*/
+
+.our-team {
+  .section-description {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .row {
+    .container-team {
+      margin-top: 2rem;
+      img {
+        margin-bottom: 1rem;
+        &:hover {
+          transform: scale(1.1) rotate(5deg);
+          transition: all 0.7s ease;
+        }
+      }
+      h5 {
+        color: $enfasis;
+      }
+    }
+  }
+}
+
+/*SECCIÓN FORMULARIO*/
+.form-calculadora {
+  button {
+    margin-top: 2rem !important;
+    background: #222;
+    width: 150px;
+    border-color: #222;
+    &:hover {
+      transition: all 0.5s ease;
+      opacity: 0.7;
+      background: #222;
+      border-color: #222;
+    }
+  }
+}
+
+/* 
+  ESTILOS FOOTER
+*/
+.footer {
+  .section-title {
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  .separador {
+    width: 30%;
+    margin: 1rem 0;
+  }
+  .info {
+    padding: 0 3rem;
+    p {
+      color: #db3636;
+      font-size: 14px;
+      i {
+        color: #a7a7a7;
+      }
+    }
+  }
+  .redes {
+    padding: 0 3rem;
+    a {
+      font-size: 34px;
+      color: #fff;
+      margin-right: 0.5rem;
+      &:hover {
+        transition: all 0.5s ease;
+        opacity: 0.4;
+      }
+    }
+  }
+  .copyright {
+    margin-top: 2rem;
+    padding: 0.7rem;
+    background: #222;
+    font-size: 12px;
+    color: #999999;
+    text-align: center;
+  }
+}
+
+/* ESTILOS MODAL */
+#modalNotificacion {
+  .modal-header {
+    background: #333;
+  }
+  .modal-title {
+    color: #fff;
+  }
+  .modal-body {
+    background: #333;
+    p {
+      font-size: 16px;
+      color: #db3636;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    ul {
+      font-size: 16px;
+      padding: 0rem 0.5rem;
+      list-style: none;
+      color: #fff;
+    }
+    .modal-monto {
+      background: #db3636;
+      padding: 0.2rem 0;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      h5 {
+        margin-top: 1rem;
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+      }
+      p {
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+      }
+    }
+  }
+  .modal-footer {
+    background: #333333;
+    justify-content: center;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+/*
+  INICIO DE MEDIA QUERYS
+*/
+
+@media (min-width: 768px) {
+  // ESTILOS GENERALES
+  .separador {
+    max-width: 20%;
+  }
+  // ENCABEZADO
+  .encabezado {
+    .container {
+      flex-wrap: nowrap;
+      .navbar {
+        .container-fluid {
+          background: transparent;
+          .collapse {
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+  // CARROUSEL
+
+  .carousel {
+    .owl-carousel .item {
+      height: 80vh !important;
+    }
+  }
+
+  // PRESENTACION
+  .presentation {
+    .container {
+      padding-left: 0;
+      max-width: 100%;
+      .presentation-icons {
+        display: flex;
+        align-items: center;
+        i {
+          margin-right: 0.5rem;
+        }
+        .presentation-text {
+          h4 {
+            font-size: 16px;
+            margin: 0 !important;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+}

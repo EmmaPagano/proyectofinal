@@ -1,0 +1,260 @@
+/*COLORES*/
+$enfasis: #fa1744;
+$fondo: #f31641;
+$titulares: #0b0103;
+$texto: #8f8f8f;
+$fondo-gris: #fff7f8;
+
+* {
+  font-family: "Raleway", sans-serif;
+  color: $texto;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: $titulares;
+}
+
+.notificacion{
+  margin-top: 1.5rem;  
+  text-align: center;
+    padding: 1rem 0;
+    background: #198754;
+    color: #fff;
+    font-weight: bold;
+
+  }
+  .notificacion-error{
+    margin-top: 1.5rem;
+    text-align: center;
+    padding: 1rem 0;
+    background: #ffc107;
+    color: #fff;
+    font-weight: bold;
+  }
+
+.seccion-titular {
+  font-size: 30px;
+}
+
+.separador-titular {
+  height: 4px !important;
+  width: 100px;
+  margin: auto;
+  background: $enfasis;
+  opacity: 1;
+}
+
+.separador-black {
+  background: $titulares;
+}
+
+.seccion-subtitulo {
+  margin-bottom: 1.5rem;
+}
+
+.mis-trabajos {
+  background-color: $enfasis;
+}
+
+.eventos  {
+    background-color: $enfasis;
+  }
+
+
+/*HEADER*/
+.encabezado {
+  height: 100vh;
+  padding: 1rem 0;
+  background: url(../img/missmonique1.jpg) no-repeat center center $fondo;
+  background-size: cover;
+  background-blend-mode: multiply;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .navbar {
+    background-color: transparent !important;
+    .logo img {
+      width: 100px;
+    }
+    .nav-link {
+      color: #fff;
+      text-align: center;
+    }
+  }
+  .encabezado-titular {
+    font-family: "Lobster", cursive;
+    font-size: 38px;
+  }
+  .encabezado-subtitulo {
+    font-family: "Lobster", cursive;
+  }
+  .encabezado-redes {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    i {
+      font-size: 22px;
+    }
+  }
+}
+
+/*
+    MIS TRABAJOS
+*/
+.mis-trabajos {
+  .col-video {
+    iframe {
+      height: 360px;
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+/* EVENTOS*/
+.eventos{
+  .card{
+    background: transparent;
+  }
+  a{
+    background: transparent;
+  }
+}
+
+/*FORMULARIO DE CONTACTO*/
+.contacto{
+  .col-form{
+    padding: 1.5rem;
+    background: #fa1744;
+    border-radius: 3px;
+    .form-label{
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+    }
+    .form-check-label{
+      font-size: 14px;
+      color: #fff;
+    }
+    .btn-enviar{
+      background: transparent;
+      border: 1px solid #fff;
+      display: block;
+      width: 120px;
+      margin: auto;
+      margin-top: 2rem;
+      &:hover{
+        background: #fff;
+        color: $enfasis;
+      }
+    }
+    
+  }
+}
+
+/*FOOTER*/
+.pie-pagina{
+  background: $fondo;
+  .copyright{
+    order:2;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .col-redes{
+    margin-left: auto;
+    .separador-titular{
+      margin: 0;
+    }
+    .footer-redes {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+      flex-wrap: wrap;
+      i {
+        font-size: 22px;
+        color: #fff;
+        padding: 0.5rem;
+        background: black;
+        &:hover{
+          background: #fff;
+          color: $enfasis;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  /* MIS TRABAJOS */
+  .mis-trabajos {
+    .col-soundcloud {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  /* GALERIA DE IMAGENES */
+  .galeria {
+    .fila-galeria {
+      display: flex;
+      gap: 15px;
+      
+      a {
+        display: block;
+        &:hover {
+          transition: all 0.7s ease;
+          transform: scale(1.05);
+        }
+      }
+
+      .col-galeria-izq {
+        width: 33.3%;
+        display: flex;
+        flex-wrap: wrap;
+        a:first-child {
+          margin-bottom: 1rem;
+        }
+        img {
+          height: 100%;
+        }
+      }
+      .col-galeria-mid {
+        width: 33.3%;
+      }
+      .col-galeria-der {
+        width: 33.3%;
+        display: flex;
+        flex-wrap: wrap;
+        a:first-child {
+          margin-bottom: 1rem;
+        }
+        img {
+          height: 100%;
+        }
+      }
+      .col-galeria {
+        width: 33.3%;
+      }
+    }
+  }
+
+  .copyright{
+    order:0!important;
+    text-align: left!important;
+    margin-top: 0!important;
+  }
+}
